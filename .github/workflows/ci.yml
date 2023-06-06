@@ -14,4 +14,4 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Run tests in java package
-        run: mvn clean "Test01_GET.java" test
+        run: mvn clean test

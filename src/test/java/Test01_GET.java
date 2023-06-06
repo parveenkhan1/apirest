@@ -19,6 +19,7 @@ public class Test01_GET {
 
     @Test
     void getRequestToTestResponseCode_differentMethod(){
+        //BDD tests
         given().
                 get("http://api.zippopotam.us/us/12345").
                 then().
@@ -28,11 +29,12 @@ public class Test01_GET {
 
     @Test
     void requestToVerifyState(){
+        //adding a comment and another comment
         given().
                 get("http://api.zippopotam.us/us/12345").
                 then().
                 assertThat().
-                body("places.state", equalTo("New York"));
+                body("places[0].state", equalTo("New York"));
 
     }
 }
