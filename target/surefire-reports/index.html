@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -113,7 +113,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test01_GET" title="Test01_GET" class="method navigator-link" hash-for-method="requestToExtractResponsePlace">requestToExtractResponsePlace</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Test01_GET" title="Test01_GET" class="method navigator-link" hash-for-method="requestToVerifyState">requestToVerifyState</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test01_GET" title="Test01_GET" class="method navigator-link" hash-for-method="requestToVerifyTheList">requestToVerifyTheList</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Test01_GET -->
@@ -150,9 +160,23 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="requestToExtractResponsePlace">
+                  </a> <!-- requestToExtractResponsePlace -->
+                  <span class="method-name">requestToExtractResponsePlace</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="requestToVerifyState">
                   </a> <!-- requestToVerifyState -->
                   <span class="method-name">requestToVerifyState</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="requestToVerifyTheList">
+                  </a> <!-- requestToVerifyTheList -->
+                  <span class="method-name">requestToVerifyTheList</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -208,19 +232,27 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getRequestToTestResponseCode')
 data.setCell(0, 2, 'Test01_GET')
-data.setCell(0, 3, 1707);
+data.setCell(0, 3, 1180);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'requestToVerifyState')
+data.setCell(1, 1, 'requestToExtractResponsePlace')
 data.setCell(1, 2, 'Test01_GET')
-data.setCell(1, 3, 955);
+data.setCell(1, 3, 808);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getRequestToTestResponseCode_differentMethod')
+data.setCell(2, 1, 'requestToVerifyTheList')
 data.setCell(2, 2, 'Test01_GET')
-data.setCell(2, 3, 273);
+data.setCell(2, 3, 396);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'requestToVerifyState')
+data.setCell(3, 2, 'Test01_GET')
+data.setCell(3, 3, 243);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getRequestToTestResponseCode_differentMethod')
+data.setCell(4, 2, 'Test01_GET')
+data.setCell(4, 3, 194);
 window.suiteTableData['Test01_GET']= { tableData: data, tableDiv: 'times-div-Test01_GET'}
 return data;
 }
@@ -258,11 +290,19 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getRequestToTestResponseCode_differentMethod</span>
-                <span class="method-start">1710 ms</span>
+                <span class="method-start">1182 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">requestToExtractResponsePlace</span>
+                <span class="method-start">1377 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">requestToVerifyState</span>
-                <span class="method-start">1984 ms</span>
+                <span class="method-start">2186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">requestToVerifyTheList</span>
+                <span class="method-start">2430 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

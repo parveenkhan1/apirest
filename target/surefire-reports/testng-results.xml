@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-06T13:22:31 BST" name="Test01_GET" finished-at="2023-06-06T13:22:33 BST" duration-ms="2978">
+  <suite started-at="2023-06-11T23:52:25 BST" name="Test01_GET" finished-at="2023-06-11T23:52:27 BST" duration-ms="2855">
     <groups>
     </groups>
-    <test started-at="2023-06-06T13:22:31 BST" name="Command line test" finished-at="2023-06-06T13:22:33 BST" duration-ms="2978">
+    <test started-at="2023-06-11T23:52:25 BST" name="Command line test" finished-at="2023-06-11T23:52:27 BST" duration-ms="2855">
       <class name="Test01_GET">
-        <test-method signature="getRequestToTestResponseCode()[pri:0, instance:Test01_GET@78ac1102]" started-at="2023-06-06T13:22:31 BST" name="getRequestToTestResponseCode" finished-at="2023-06-06T13:22:32 BST" duration-ms="1707" status="PASS">
+        <test-method signature="getRequestToTestResponseCode()[pri:0, instance:Test01_GET@5891e32e]" started-at="2023-06-11T23:52:25 BST" name="getRequestToTestResponseCode" finished-at="2023-06-11T23:52:26 BST" duration-ms="1180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getRequestToTestResponseCode -->
-        <test-method signature="getRequestToTestResponseCode_differentMethod()[pri:0, instance:Test01_GET@78ac1102]" started-at="2023-06-06T13:22:32 BST" name="getRequestToTestResponseCode_differentMethod" finished-at="2023-06-06T13:22:33 BST" duration-ms="273" status="PASS">
+        <test-method signature="getRequestToTestResponseCode_differentMethod()[pri:0, instance:Test01_GET@5891e32e]" started-at="2023-06-11T23:52:26 BST" name="getRequestToTestResponseCode_differentMethod" finished-at="2023-06-11T23:52:26 BST" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getRequestToTestResponseCode_differentMethod -->
-        <test-method signature="requestToVerifyState()[pri:0, instance:Test01_GET@78ac1102]" started-at="2023-06-06T13:22:33 BST" name="requestToVerifyState" finished-at="2023-06-06T13:22:33 BST" duration-ms="955" status="PASS">
+        <test-method signature="requestToExtractResponsePlace()[pri:0, instance:Test01_GET@5891e32e]" started-at="2023-06-11T23:52:26 BST" name="requestToExtractResponsePlace" finished-at="2023-06-11T23:52:27 BST" duration-ms="808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- requestToExtractResponsePlace -->
+        <test-method signature="requestToVerifyState()[pri:0, instance:Test01_GET@5891e32e]" started-at="2023-06-11T23:52:27 BST" name="requestToVerifyState" finished-at="2023-06-11T23:52:27 BST" duration-ms="243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- requestToVerifyState -->
+        <test-method signature="requestToVerifyTheList()[pri:0, instance:Test01_GET@5891e32e]" started-at="2023-06-11T23:52:27 BST" name="requestToVerifyTheList" finished-at="2023-06-11T23:52:27 BST" duration-ms="396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- requestToVerifyTheList -->
       </class> <!-- Test01_GET -->
     </test> <!-- Command line test -->
   </suite> <!-- Test01_GET -->
