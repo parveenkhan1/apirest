@@ -71,7 +71,6 @@ public class Test01_GET {
 
     @Test
     void requestToVerifyTheList(){
-        //Make the api request
         //RestAssured.baseURI = "http://api.zippopotam.us/us/12345";
         Response response = RestAssured.get("http://api.zippopotam.us/us/12345");
 
