@@ -54,7 +54,20 @@ public class Test01_GET {
         System.out.println("State Abbreviation:" + stateAbbreviation);
         System.out.println("Place Name :" + placeName);
 
+        //Store the extracted values in variables
+        String stateAbbreviationVariable = stateAbbreviation;
+        String  placeNameVariable = placeName;
+
+        //Use the stored values as path parameters in the second API Call
+        Response response2 = RestAssured.get("http://api.zippopotam.us/us/" + stateAbbreviationVariable + "/" + placeNameVariable);
+
+        //Print the response from second API call
+        System.out.println("Second API Response");
+        System.out.println(response2.asString());
+
     }
+
+
 
 
 }
