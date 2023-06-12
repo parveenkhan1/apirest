@@ -48,7 +48,6 @@ public class Test01_GET {
         Response response = RestAssured.get("http://api.zippopotam.us/us/12345");
 
         //Extract the state abbreviation and place name from the response
-
         String stateAbbreviation = response.path("places[0].'state abbreviation'");
         String placeName = response.path("places[0].'place name'");
 
