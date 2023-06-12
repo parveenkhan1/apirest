@@ -1,8 +1,10 @@
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -10,7 +12,14 @@ import java.util.List;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
 
+
+
 public class Test01_GET {
+
+    @BeforeMethod
+    public void setup(){
+        RestAssured.filters(new AllureRestAssured());
+    }
 
     @Test
     void getRequestToTestResponseCode() {
