@@ -25,10 +25,6 @@ jobs:
           name: allure-report
           path: target/site/allure-maven-plugin
 
-    publish-report:
-      needs: run-tests
-      runs-on: ubuntu-latest
-
       steps:
         - name: Download Allure Report
           uses: actions/download-artifact@v2
