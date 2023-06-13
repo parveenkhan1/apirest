@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Test01_GET" class="navigator-link">
-              <span class="suite-name border-passed">Test01_GET</span>
+              <span class="suite-name border-failed">Test01_GET</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Test01_GET" class="hide-methods failed suite-Test01_GET"> (hide)</a> <!-- hide-methods failed suite-Test01_GET -->
+                      <a href="#" panel-name="suite-Test01_GET" class="show-methods failed suite-Test01_GET"> (show)</a> <!-- show-methods failed suite-Test01_GET -->
+                    </span>
+                    <div class="method-list-content failed suite-Test01_GET">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test01_GET" title="Test01_GET" class="method navigator-link" hash-for-method="getRequestToTestResponseCode_differentMethod">getRequestToTestResponseCode_differentMethod</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Test01_GET -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,11 +118,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Test01_GET" title="Test01_GET" class="method navigator-link" hash-for-method="getRequestToTestResponseCode">getRequestToTestResponseCode</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test01_GET" title="Test01_GET" class="method navigator-link" hash-for-method="getRequestToTestResponseCode_differentMethod">getRequestToTestResponseCode_differentMethod</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,6 +147,52 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Test01_GET" class="panel Test01_GET">
+          <div class="suite-Test01_GET-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Test01_GET</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRequestToTestResponseCode_differentMethod">
+                  </a> <!-- getRequestToTestResponseCode_differentMethod -->
+                  <span class="method-name">getRequestToTestResponseCode_differentMethod</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;500&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:46)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at Test01_GET.getRequestToTestResponseCode_differentMethod(Test01_GET.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 46 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test01_GET-class-failed -->
           <div class="suite-Test01_GET-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -149,13 +204,6 @@
                   <a name="getRequestToTestResponseCode">
                   </a> <!-- getRequestToTestResponseCode -->
                   <span class="method-name">getRequestToTestResponseCode</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getRequestToTestResponseCode_differentMethod">
-                  </a> <!-- getRequestToTestResponseCode_differentMethod -->
-                  <span class="method-name">getRequestToTestResponseCode_differentMethod</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -236,28 +284,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getRequestToTestResponseCode')
 data.setCell(0, 2, 'Test01_GET')
-data.setCell(0, 3, 6196);
+data.setCell(0, 3, 6668);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'requestToExtractResponsePlace')
 data.setCell(1, 2, 'Test01_GET')
-data.setCell(1, 3, 942);
+data.setCell(1, 3, 1283);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'requestToVerifyTheList')
 data.setCell(2, 2, 'Test01_GET')
-data.setCell(2, 3, 470);
+data.setCell(2, 3, 582);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'requestToVerifyState')
 data.setCell(3, 2, 'Test01_GET')
-data.setCell(3, 3, 242);
+data.setCell(3, 3, 292);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'getRequestToTestResponseCode_differentMethod')
 data.setCell(4, 2, 'Test01_GET')
-data.setCell(4, 3, 235);
+data.setCell(4, 3, 270);
 window.suiteTableData['Test01_GET']= { tableData: data, tableDiv: 'times-div-Test01_GET'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Test01_GET">
               </div> <!-- times-div-Test01_GET -->
             </div> <!-- times-div -->
@@ -290,39 +338,41 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getRequestToTestResponseCode</span>
-                <span class="method-start">398 ms</span>
+                <span class="method-start">573 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">6605 ms</span>
+                <span class="method-start">7257 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">getRequestToTestResponseCode_differentMethod</span>
-                <span class="method-start">6606 ms</span>
+                <span class="method-start">7259 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">6845 ms</span>
+                <span class="method-start">7539 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">requestToExtractResponsePlace</span>
-                <span class="method-start">6846 ms</span>
+                <span class="method-start">7542 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">7790 ms</span>
+                <span class="method-start">8829 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">requestToVerifyState</span>
-                <span class="method-start">7792 ms</span>
+                <span class="method-start">8832 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">8036 ms</span>
+                <span class="method-start">9127 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">requestToVerifyTheList</span>
-                <span class="method-start">8037 ms</span>
+                <span class="method-start">9129 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
