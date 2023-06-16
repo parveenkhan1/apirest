@@ -96,7 +96,6 @@ public class Test01_GET {
         String  placeNameVariable = placeName;
 
         //Use the stored values as path parameters in the second API Call
-        //
         Response response2 = RestAssured.get("http://api.zippopotam.us/us/" + stateAbbreviationVariable + "/" + placeNameVariable);
 
         //Get the list of places from the second api response
